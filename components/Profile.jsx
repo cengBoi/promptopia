@@ -17,6 +17,7 @@ const Profile = ({ name, desc, data, handleEdit, handleDelete }) => {
             key={post._id}
             post={post}
             handleEdit={() => handleEdit && handleEdit(post)}
+            handleDelete={() => handleDelete && handleDelete(post)}
           />
         ))}
       </div>
